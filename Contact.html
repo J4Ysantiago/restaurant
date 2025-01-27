@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        
+        html, body {
+            height: 100%; 
+            margin: 0;
+            overflow-x: hidden; 
+        }
+
+        /* Add padding to prevent bottom navbar overlapping the content */
+        body {
+                background-image: url("trainback.gif"); 
+                background-size: cover; /* Ensures the background covers the entire viewport */
+                background-repeat: no-repeat; 
+                background-attachment: fixed; 
+                color: white; /* Ensures text is readable against the background */
+                padding-bottom: 70px; /* Padding to prevent overlap with fixed navbar */
+            }
+
+        .bg-special {
+            background-color: rgb(20, 0, 85);
+        }
+
+        .navbar-nav .nav-link {
+            font-family: fantasy;
+            color: white;
+            text-shadow: 0 0 2px #ffffff, 0 0 10px #ffffff, 0 0 15px #d40000, 0 0 20px #b80000, 0 0 25px #9d0000;
+            transition: color 0.1s ease, text-shadow 0.1s ease;
+            max-width: 0%;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: rgb(168, 23, 3);
+            text-shadow: 0 0 2px #ff4500, 0 0 10px #ff4500, 0 0 15px #ff6347, 0 0 20px #ff6347, 0 0 25px #ff6347;
+        }
+
+         /* Glow effect for navbar-brand */
+         .navbar-brand {
+              color: white;
+              text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #ff0000;
+              transition: text-shadow 0.1s ease, color 0.1s ease;
+            }
+
+            .navbar-brand:hover {
+              color: rgb(231, 16, 16); /* Change text color */
+              text-shadow: 0 0 2px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff4500, 0 0 20px #ff4500, 0 0 25px #ff4500;
+            }
+
+
+         
+
+        
+
+        .form-container {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            margin: 30px auto;
+        }
+
+        .form-label {
+            color: #f1c40f;
+        }
+
+        .form-control {
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .form-control:focus {
+            outline: none;
+            box-shadow: 0 0 5px #f1c40f;
+        }
+
+        .btn-submit {
+            background-color: #7d2004;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        .btn-submit:hover {
+            background-color: #e67e22;
+            color: white;
+        }
+
+        .form-heading {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #f1c40f;
+            font-size: 1.5rem;
+        }
+
+        /* Social icons */
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 80px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+       
+        .fa-instagram {
+            background: #d45925;
+            color: white;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-special navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Resteraunt.html" style="font-family: fantasy;">
+                <img src="preview-comhiclipartmcvhb.png" style="width:40px;" class="rounded-pill">
+                SoulTrain
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="Resteraunt.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Resteraunt.html">Menu</a>
+              </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                 
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Form -->
+    <div class="container mt-2">
+        <div class="form-container">
+            <h3 class="form-heading">Contact Us</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="telephone" class="form-label">Telephone</label>
+                    <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" class="form-control" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+     <!-- Fixed Footer -->
+     <nav class="navbar navbar-expand-sm bg-special navbar-dark fixed-bottom">
+      <div class="container-fluid">
+          <a href="https://www.instagram.com" class="fa fa-instagram" aria-label="Instagram"></a>
+          <a href="https://www.facebook.com" class="fa fa-facebook" aria-label="Facebook"></a>
+          <a href="https://twitter.com" class="fa fa-twitter" aria-label="Twitter"></a>
+          <a href="https://www.google.com" class="fa fa-google" aria-label="Google"></a>
+          <a href="https://www.linkedin.com" class="fa fa-linkedin" aria-label="LinkedIn"></a>
+      </div>
+  </nav>
+</body>
+</html>

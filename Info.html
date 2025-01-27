@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #055018;
+            position: fixed;
+            top: 0%;
+            width: 100%;
+        }
+        li{
+            float: left;
+        }
+
+        li a:hover{
+            margin: 0%;
+            background-color: rgb(12, 128, 16);
+            top: 0%;
+        }
+         
+
+        li a{
+            display: inline;
+            float:left;
+            padding: 20px 16px;
+            color: rgb(255, 255, 255);
+            display: block;
+            text-align: center;
+            
+
+        }
+        h3{
+            float: left;
+            color: white;
+        }
+        .logo{
+            float: left;
+        }
+        
+        body{
+            background-color: rgb(20, 12, 1);
+        }
+        .logo{
+            color: white;
+        }
+
+        table {
+        background-color: rgb(255, 166, 33);
+
+        }
+
+        ol {
+            background-color: #ffaa22;
+        }
+
+        #top{
+            background-color: #0073ff;
+            border: solid black 3px;
+        }
+
+        .Info{
+            background-color:#0073ff;
+            border:solid rgb(0, 0, 0) 3px;
+        
+        }
+        
+        .form{
+            margin-top: 65px;
+            .comments{
+                margin-top: 20px;
+            }
+        }
+
+
+    
+    </style>
+
+
+</head>
+
+<body style="background-color: bisque;">  
+
+
+    <ul>
+
+        <div class="logo">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M11 21V2.352A3.451 3.451 0 0 0 9.5 2a3.5 3.5 0 0 0-3.261 2.238A3.5 3.5 0 0 0 4.04 8.015a3.518 3.518 0 0 0-.766 1.128c-.042.1-.064.209-.1.313a3.34 3.34 0 0 0-.106.344 3.463 3.463 0 0 0 .02 1.468A4.017 4.017 0 0 0 2.3 12.5l-.015.036a3.861 3.861 0 0 0-.216.779A3.968 3.968 0 0 0 2 14c.003.24.027.48.072.716a4 4 0 0 0 .235.832c.006.014.015.027.021.041a3.85 3.85 0 0 0 .417.727c.105.146.219.285.342.415.072.076.148.146.225.216.1.091.205.179.315.26.11.081.2.14.308.2.02.013.039.028.059.04v.053a3.506 3.506 0 0 0 3.03 3.469 3.426 3.426 0 0 0 4.154.577A.972.972 0 0 1 11 21Zm10.934-7.68a3.956 3.956 0 0 0-.215-.779l-.017-.038a4.016 4.016 0 0 0-.79-1.235 3.417 3.417 0 0 0 .017-1.468 3.387 3.387 0 0 0-.1-.333c-.034-.108-.057-.22-.1-.324a3.517 3.517 0 0 0-.766-1.128 3.5 3.5 0 0 0-2.202-3.777A3.5 3.5 0 0 0 14.5 2a3.451 3.451 0 0 0-1.5.352V21a.972.972 0 0 1-.184.546 3.426 3.426 0 0 0 4.154-.577A3.506 3.506 0 0 0 20 17.5v-.049c.02-.012.039-.027.059-.04.106-.064.208-.13.308-.2s.214-.169.315-.26c.077-.07.153-.14.225-.216a4.007 4.007 0 0 0 .459-.588c.115-.176.215-.361.3-.554.006-.014.015-.027.021-.041.087-.213.156-.434.205-.659.013-.057.024-.115.035-.173.046-.237.07-.478.073-.72a3.948 3.948 0 0 0-.066-.68Z"/>
+              </svg>
+              
+        </div>
+
+            <h3>Web</h3>
+
+            <li><a href="Carp_web.html">Home</a></li>
+            <li><a href="Info.html">Info</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li style="float: right;"><a href=>About</a></li>
+
+        </ul>
+</div>
+
+<div class="form">
+    <form action="" >
+
+        <label for="fname">Contacts:</label><br>
+
+        <p> 
+            <a href = "https://www.linkedin.com/in/jaylen-santiago-314bb5324/">Linkedin</a> 
+        </p>
+
+
+        <input type="text" id="fname" name="fname" placeholder="first & last name"><br>
+
+            <div class="comments">
+                <textarea id="comment" rows="5" cols="50" placeholder="Comments"></textarea>
+                    <script>
+                        function submitComment(){
+                            var comment = document.getElementById('Comments').value;
+
+                            document.getElementById('display-comment').innerText = comment;
+                        }
+                    </script> 
+            </div>
+
+        <button onclick="submitComment" style="margin-top: 20px;";>Submit</button>   
+    </form>
+</div>
+
+        <script src="app.js"></script>
+</body>
+</html>
