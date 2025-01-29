@@ -5,3 +5,16 @@ IF you dont mind just sign this with ya name to make sure we are all connnected 
 Elijah
 
 Jaylen
+
+
+
+
+
+
+
+
+
+
+
+
+List of categories, Name, price, FoodID, type of food(ie lunch breakfast), calories, description 
