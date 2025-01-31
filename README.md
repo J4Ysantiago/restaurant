@@ -17,4 +17,6 @@ Jaylen
 
 
 
-List of categories, Name, price, FoodID, type of food(ie lunch breakfast), calories, description 
+List of categories for Table Menu: , Name, price, FoodID, type of food(ie lunch breakfast), calories, description 
+
+List of categories for Table Contact: Contact id, First name, Last Name, phonenumber, email, and message
