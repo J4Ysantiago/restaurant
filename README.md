@@ -18,8 +18,7 @@ TyKeilin
 
 
 
-
 List of categories for Table Menu: , Name, price, FoodID, type of food(ie lunch breakfast), calories, description, Rating
 
 
-List of categories for Table Contact: Contact id, First name, Last Name, phonenumber, email, and message
+List of categories for Table Contact: Contact id, First name, Last Name, phonenumber, email, message, Review-save/edit
